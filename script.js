@@ -33,27 +33,51 @@
 
 //2. Using Prompt & Confirm
 
-let age = prompt("Enter your age");
- a = ["Access Denied", "Access Granted"];
- b = Number(age > 18);
+//let age = prompt("Enter your age");
+// a = ["Access Denied", "Access Granted"];
+ //b = Number(age > 18);
 
-console.log(a[b]);
-
-
+//console.log(a[b]);
 
 
-var x = 5;
-let y = 10;
+
+
+//var x = 5;
+//let y = 10;
 
 {
-  var x = 20;
-  let y = 30;
+  //var x = 20;
+  //let y = 30;
 
-  console.log(x); // ?
-  console.log(y); // ?
+  //console.log(x); // ?
+  //console.log(y); // ?
 }
 
-console.log(x); // ?
-console.log(y); // ?
+//console.log(x); // ?
+//console.log(y); // ?
 
+
+//let num = 10;
+//++num;
+//console.log(num); //11
+
+
+//let num = 10;
+//num++;
+//console.log(num); //11
+
+//let numbers = 20;
+//let numbers1 = numbers++;
+//console.log(numbers, numbers1); //21 20
+
+
+//let a1 = 12;
+//let b1 = ++a1;     // a1 becomes 13, b1 = 13
+//let c1 = ++b1;     // b1 becomes 14, c1 = 14
+//console.log(a1, b1, c1);
+
+
+//let num1 = 20;
+//let num2 = num1++ + ++num1;
+//console.log(num1, num2);
 
