@@ -81,3 +81,41 @@
 //let num2 = num1++ + ++num1;
 //console.log(num1, num2);
 
+
+//07-08-2025 TASK
+//1
+console.log(10 + 10); 
+console.log(10 - 10);
+console.log(10 * 10);
+console.log(10 / 10);
+console.log(10 % 11);
+console.log(10 ** 10);
+
+
+let int = 10;
+int = int++;
+console.log(int);
+
+
+let numbers = 20;
+let numbers1 = ++numbers;
+console.log(numbers, numbers1); //21 21
+
+
+let a1 = 12;
+let b1 = ++a1;
+let c1 = ++b1;
+console.log(a1, b1, c1);
+
+
+let d1 = 1;
+let e1 = --d1;
+let f1 = ++e1;
+console.log(d1, e1, f1)
+
+
+let num1 = 20;
+let num2 = num1++ + --num1;
+console.log(num1, num2);
+
+
