@@ -84,38 +84,92 @@
 
 //07-08-2025 TASK
 
-console.log(10 + 10); 
+/*console.log(10 + 10); 
 console.log(10 - 10);
 console.log(10 * 10);
 console.log(10 / 10);
 console.log(10 % 11);
-console.log(10 ** 10);
+console.log(10 ** 10);*/
 
 
-let int = 10;
+/*let int = 10;
 int = int++;
-console.log(int);
+console.log(int);*/
 
 
-let numbers = 20;
-let numbers1 = ++numbers;
-console.log(numbers, numbers1);
+//let numbers = 20;
+//let numbers1 = ++numbers;
+//console.log(numbers, numbers1);
 
 
-let a1 = 12;
-let b1 = ++a1;
-let c1 = ++b1;
-console.log(a1, b1, c1);
+//let a1 = 12;
+//let b1 = ++a1;
+//let c1 = ++b1;
+//console.log(a1, b1, c1);
 
 
-let d1 = 1;
-let e1 = --d1;
-let f1 = ++e1;
-console.log(d1, e1, f1)
+//let d1 = 1;
+//let e1 = --d1;
+//let f1 = ++e1;
+//console.log(d1, e1, f1)
 
 
-let num1 = 20;
-let num2 = num1++ + --num1;
-console.log(num1, num2);
+//let num1 = 20;
+//let num2 = num1++ + --num1;
+//console.log(num1, num2);
+
+//08-08-2025 task
+
+//Q1
+let x = 5;
+let y = x++ + ++x;
+console.log(x, y)
+
+//2
+let total = 50;   
+total += 30;    
+total /= 4;      
+console.log(total); 
+
+//3
+
+console.log(10 == "10");
+console.log(10 === "10");
+
+//5
+console.log(typeof(5 + "5"));
+
+//6
+
+console.log(Boolean(0));
+console.log(Boolean("false"));
+console.log(Boolean([]));
+
+//7
+
+let n = Number("123"); 
+let a = n + 10;
+console.log(a);
+
+//8
+console.log(Boolean({}));
+console.log(Boolean(null));
+
+
+//9
+
+let b= "Hello" + "  "+ "Students";
+console.log(b);
+
+//10
+let c= "10";  
+let d= 10;    
+console.log(c+d)
+console.log(Number(c) + d);
+
+//4
+let age = 25;
+let experience = 3;
+console.log(age >= 18 && experience >= 2 && "Eligible for the job" || "Not eligible for the job");
 
 
