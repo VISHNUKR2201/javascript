@@ -83,7 +83,7 @@
 
 
 //07-08-2025 TASK
-//1
+
 console.log(10 + 10); 
 console.log(10 - 10);
 console.log(10 * 10);
@@ -99,7 +99,7 @@ console.log(int);
 
 let numbers = 20;
 let numbers1 = ++numbers;
-console.log(numbers, numbers1); //21 21
+console.log(numbers, numbers1);
 
 
 let a1 = 12;
