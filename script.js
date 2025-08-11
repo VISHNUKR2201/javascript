@@ -176,7 +176,7 @@ console.log(Number(c) + d);
 
 //11/08-2025 task
 //1
-/*let num = Number(prompt("Enter a number:"));
+let num = Number(prompt("Enter a number:"));
 
 
   if (num > 0) {
@@ -205,7 +205,7 @@ switch (month) {
   case 12:console.log("December"); break;    
    
 }
-  */
+  
 
 //3
 for(let a=1; a<=10; a++){
