@@ -121,7 +121,7 @@ console.log(int);*/
 //08-08-2025 task
 
 //Q1
-let x = 5;
+/*let x = 5;
 let y = x++ + ++x;
 console.log(x, y)
 
@@ -168,8 +168,67 @@ console.log(c+d)
 console.log(Number(c) + d);
 
 //4
-let age = 25;
-let experience = 3;
-console.log(age >= 18 && experience >= 2 && "Eligible for the job" || "Not eligible for the job");
+//let age = 25;
+//let experience = 3;
+//console.log(age >= 18 && experience >= 2 && "Eligible for the job" || "Not eligible for the job");*/
+
+
+
+//11/08-2025 task
+//1
+/*let num = Number(prompt("Enter a number:"));
+
+
+  if (num > 0) {
+    console.log("Positive number");
+  } else if (num < 0) {
+    console.log("Negative number");
+  } else {
+    console.log("Zero");
+  }
+
+//2
+let month = 7; 
+
+switch (month) {
+  case 1:console.log("January") ; break; 
+  case 2:console.log("February"); break;
+  case 3: console.log("March");break; 
+  case 4:console.log("April");break; 
+  case 5:console.log("May");break;
+  case 6:console.log("June");break;
+  case 7:console.log("July");break; 
+  case 8:console.log("August");break; 
+  case 9:console.log("September"); break;
+  case 10:console.log("October");break;
+  case 11:console.log("November"); break;
+  case 12:console.log("December"); break;    
+   
+}
+  */
+
+//3
+for(let a=1; a<=10; a++){
+  console.log(`${a}*7=${a*7}`);
+}
+
+//4
+let c = ["red", "green", "blue", "yellow"];
+for (let a of c) {
+  console.log(a.toUpperCase());
+}
+  
+
+//5
+let car = {
+  brand: "Tata",
+  model: "Safari",
+  year: 2022
+};
+
+for (let a in car) {
+  console.log(a + ": " + car[a]);
+}
+
 
 
