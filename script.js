@@ -233,13 +233,15 @@ for (let a in car) {
 
 
 //12-08-2025 TASK
-
+/*
 //2
 let shoutName = function(name) {
   console.log(name.toUpperCase() + "!!!");
 }
 shoutName("vishnu");
-shoutName("hello"); 
+
+
+
 
 //3
 
@@ -249,9 +251,48 @@ let tellFortune = (name, place = "Unknown") => {
 tellFortune("Vishnu", "COIMBATORE");  
 tellFortune("Vishnu"); 
 
+
 //5
 let sumNumbers = (a, b) => a + b;
 console.log(sumNumbers(5, 7)); 
+
+*/
+
+
+//1
+
+let num = Number(prompt("Enter a number:"));
+
+function isMagicNumber(num) {
+  if (num % 3 === 0 && num % 7 === 0) {
+    console.log(" It's magic!");
+  } else {
+    console.log("Not magic");
+  }
+}
+isMagicNumber(num);
+
+//4
+
+function scopeDetective() {
+  if (true) {
+    var varVariable = "I am var ";
+    let letVariable = "I am let ";
+    const constVariable = "I am const ";
+
+    console.log(varVariable); 
+    console.log(letVariable);  
+    console.log(constVariable); 
+  }
+console.log(varVariable); 
+    console.log(letVariable);  
+    console.log(constVariable); 
+  
+}
+scopeDetective();
+
+
+
 
 
 
