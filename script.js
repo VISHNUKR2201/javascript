@@ -176,7 +176,7 @@ console.log(Number(c) + d);
 
 //11/08-2025 task
 //1
-let num = Number(prompt("Enter a number:"));
+/*let num = Number(prompt("Enter a number:"));
 
 
   if (num > 0) {
@@ -227,8 +227,31 @@ let car = {
 };
 
 for (let a in car) {
-  console.log(a + ": " + car[a]);
+  console.log(a + ": " + car[a]); 
 }
+*/
+
+
+//12-08-2025 TASK
+
+//2
+let shoutName = function(name) {
+  console.log(name.toUpperCase() + "!!!");
+}
+shoutName("vishnu");
+shoutName("hello"); 
+
+//3
+
+let tellFortune = (name, place = "Unknown") => {
+  console.log(`Dear ${name}, you will travel to ${place} soon!`);
+}
+tellFortune("Vishnu", "COIMBATORE");  
+tellFortune("Vishnu"); 
+
+//5
+let sumNumbers = (a, b) => a + b;
+console.log(sumNumbers(5, 7)); 
 
 
 
