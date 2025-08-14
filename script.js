@@ -260,7 +260,7 @@ console.log(sumNumbers(5, 7));
 
 
 //1
-
+/*
 let num = Number(prompt("Enter a number:"));
 
 function isMagicNumber(num) {
@@ -289,7 +289,113 @@ console.log(varVariable);
     console.log(constVariable); 
   
 }
-scopeDetective();
+scopeDetective();*/
+
+
+/*var arr1 = [1, 2, 3];
+var arr2 = [4, 5, 6];
+var result = [];
+
+for (var i = 0; i < arr1.length; i++) {
+    result[result.length] = arr1[i];
+}
+
+for (var i = 0; i < arr2.length; i++) {
+    result[result.length] = arr2[i];
+}
+
+
+console.log(result);*/
+
+//13-08-2025
+
+//1
+function sayHello() {
+    console.log("Hello World");
+}
+sayHello();
+
+//2
+
+let fruits = ["Apple", "Banana", "Mango", "Orange", ];
+
+console.log(fruits[0]);               
+console.log(fruits[fruits.length - 1]); 
+
+
+//3
+
+var student = {
+    name: "Vishnu",
+    age: 28
+}
+console.log(student.name);
+
+//4
+var a = "JavaScript";
+
+for (var i = 0; i < a.length; i++) {
+    console.log(a[i]);
+}
+
+
+//5
+function hai () {
+    console.log("I am learning JavaScript");
+    
+}
+hai()
+
+
+//medium
+//2
+function power(a) {
+    return function(b) {
+        return a ** b;
+    }
+}
+console.log(power(2)(3));
+console.log(power(5)(2));
+
+
+//3
+
+(function(shopName, discount) {
+    alert("Welcome to " + shopName + "! Get " + discount + "% off today!");
+})("flipkart", 50);
+
+
+
+// 4
+
+function *color() {
+
+    yield "red";
+    yield "green";
+    yield "blue";
+}
+var colors = color();
+console.log(colors.next());
+console.log(colors.next());
+console.log(colors.next()); 
+console.log(colors.next());
+
+//5
+var word = "developer";
+
+for (var letter of word) {
+    console.log(letter);
+}
+let laptop = { brand: 'Dell', price: 45000, isNew: true };
+
+for (var key in laptop) {
+    console.log(laptop[key]);
+}
+
+
+
+
+
 
 
 
