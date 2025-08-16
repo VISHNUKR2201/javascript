@@ -307,6 +307,7 @@ for (var i = 0; i < arr2.length; i++) {
 
 console.log(result);*/
 
+/*
 //13-08-2025
 
 //1
@@ -316,15 +317,12 @@ function sayHello() {
 sayHello();
 
 //2
-
 let fruits = ["Apple", "Banana", "Mango", "Orange", ];
 
 console.log(fruits[0]);               
 console.log(fruits[fruits.length - 1]); 
 
-
 //3
-
 var student = {
     name: "Vishnu",
     age: 28
@@ -333,18 +331,16 @@ console.log(student.name);
 
 //4
 var a = "JavaScript";
-
 for (var i = 0; i < a.length; i++) {
     console.log(a[i]);
 }
 
-
 //5
 function hai () {
-    console.log("I am learning JavaScript");
-    
+    console.log("I am learning JavaScript");   
 }
 hai()
+
 
 
 //medium
@@ -357,17 +353,7 @@ function power(a) {
 console.log(power(2)(3));
 console.log(power(5)(2));
 
-
-//3
-
-(function(shopName, discount) {
-    alert("Welcome to " + shopName + "! Get " + discount + "% off today!");
-})("flipkart", 50);
-
-
-
 // 4
-
 function *color() {
 
     yield "red";
@@ -379,6 +365,8 @@ console.log(colors.next());
 console.log(colors.next());
 console.log(colors.next()); 
 console.log(colors.next());
+
+
 
 //5
 var word = "developer";
@@ -395,10 +383,166 @@ for (var key in laptop) {
 
 
 
+//3
+
+(function(shopName, discount) {
+    alert("Welcome to " + shopName + "! Get " + discount + "% off today!");
+})("flipkart", 50);
+
+*/
+
+
+
+//14-08-2025
+
+//Spread & Rest Operator
+
+//1
+let arry1 = ['a', 'b'];
+let arry2 = ['c', 'd'];
+let array = [...arry1, ...arry2];
+console.log(array);
+
+//2
+let a1 = { name: 'John', age: 25 };
+let b1 = { ...a1 };
+console.log(b1);
+
+//3
+let a5 = { x: 1, y: 2 };
+let b5 = { y: 3, z: 4 };
+let m = { ...a5, ...b5 };
+console.log(m);
+
+//4
+function sumAll(...nums) {
+    let sum = 0;
+    for (let i = 0; i < nums.length; i++) {
+        sum = sum + nums[i];
+    }
+    return sum;
+}
+console.log(sumAll(1, 2, 3));  
+console.log(sumAll(10, 20, 30, 40)); 
+console.log(sumAll());             
 
 
 
 
+//5
+
+function logArgs(a, b, ...c) {
+    console.log("First:", a);
+    console.log("Second:", b);
+    console.log("Remaining:", c);
+}
+logArgs(1, 2, 3, 4, 5,6,7,8,9,10);
+
+//Array Destructuring
+
+//6
+let c = ['red', 'green', 'blue'];
+let [c1, c2] = c;
+console.log(c1);
+console.log(c2); 
+
+//7
+
+let i = ['pen', 'pencil', 'eraser', 'sharpener'];
+let [a, , , b] = i;
+console.log(a);
+console.log(b);
 
 
+//8
+let nums = [10, 20, 30, 40, 50];
+let [a7, b7, ...n] = nums;
+console.log(a7);   
+console.log(b7);  
+console.log(n);
+
+
+
+
+//9
+let vehicles = ['car', ['bike', ['bus', 'train']]];
+let [ , [ , [bus]]] = vehicles;
+console.log(bus);
+
+//10
+let a8 = 10;
+let b8 = 20;
+
+[a8, b8] = [b8, a8];
+console.log(a8); 
+console.log(b8);
+
+
+//Array Methods - Manipulation
+
+//11
+let arr = [1, 2, 3];
+arr.push(4, 5);
+console.log(arr);
+
+//12
+let arr1 = [1, 2, 3,4,5,6];
+
+arr1.pop();
+arr1.pop();
+
+console.log(arr1); // [1]
+
+
+
+
+//13
+
+let arr3 = [30, 40, 50];
+arr3.unshift(10, 20);
+console.log(arr3); 
+
+//14
+
+let arr4 = [1, 2, 3, 4];
+arr4.shift();
+console.log(arr4);
+
+//15
+let arr5 = [10, 20, 30, 40, 50];
+arr5.splice(1, 2, 99, 100);
+console.log(arr5);
+
+//Array Methods - Merge, Slice, Flat, Fill
+
+//16
+let ar1 = [1, 2];
+let ar2 = [3, 4];
+
+let r = ar1.concat(ar2);
+console.log(r); 
+
+//17
+let ar3 = [5, 6, 7, 8, 9];
+let result = ar3.slice(1, 3);
+console.log(result);
+
+
+
+//18
+let arr = [1, [2, [3, [4]]]];
+let result1 = arr.flat(Infinity);
+console.log(result1);
+
+//19
+let ar4 = new Array(5).fill("Hello");
+console.log(ar4); 
+
+//20
+
+let ar5 = [1, 2, 3, [4, [5, 6]]];
+
+let flatArr = ar5.flat(2);
+
+console.log(flatArr);
 
