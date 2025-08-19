@@ -392,7 +392,7 @@ for (var key in laptop) {
 */
 
 
-
+/*
 //14-08-2025
 
 //Spread & Rest Operator
@@ -545,4 +545,111 @@ let ar5 = [1, 2, 3, [4, [5, 6]]];
 let flatArr = ar5.flat(2);
 
 console.log(flatArr);
+
+
+
+*/
+/*
+//19-08-2025
+
+//1
+
+let nums = [45, 12, 3, 99, 23, 8];
+
+var new10=nums.sort((a,b)=>{
+  return a-b
+})
+console.log(new10);
+
+var new10=nums.sort((a,b)=>{
+  return b-a
+})
+console.log(new10);
+
+//2
+
+let colors = ["red", "blue", "green", "yellow"];
+
+if (colors.indexOf() === -1) {
+    colors.push("pink");
+}
+console.log(colors);
+
+//3
+let arr = ["HTML", "CSS", "JS"];
+let jost = arr.join("-");
+let tost = arr.toString();
+
+console.log(jost);
+console.log(tost);
+
+
+
+
+
+//4
+let a = ["pen", "book", "pen", "pencil", "pen"];
+
+let f = a.indexOf("pen");
+console.log(f); 
+let l = a.lastIndexOf("pen");
+console.log(l); 
+
+//5
+
+let students = ["Kamal", "Sita", "Ravi"];
+
+students.forEach(NewArr => {
+    console.log(NewArr);
+});
+
+
+//7
+
+let totalVal = [5, 10, 15, 20, 25];
+
+let sum = totalVal.reduce((accumulator, currentElement,index,totalArray) => {
+
+  return accumulator + currentElement;
+}, 0);
+
+console.log(sum);
+
+*/
+
+//8
+let ages = [22, 18, 25, 30, 16];
+
+let under = ages.some(age => age < 18);
+console.log(under);
+
+let above = ages.every(age => age > 15);
+console.log(above);
+
+
+//9
+
+let str = "Hello World";
+let str1 = str.replace("World", "JavaScript");
+console.log(str1);
+
+let slic = str.slice(0, 5);
+console.log(slic);
+
+
+
+//10
+let str5 = "I love coding";
+let splt = str5.split(" ");
+console.log(splt);
+
+let rep = str5.repeat(3);
+console.log(rep);
+
+
+
+
+
+
+
 
